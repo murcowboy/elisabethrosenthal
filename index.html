@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elisabeth Rosenthal (1894–1920) — Research &amp; Memorial Initiative</title>
-  <meta name="description" content="The Elisabeth Rosenthal Research &amp; Memorial Initiative: restoring the documented biography of Elisabeth (Lisa) Rosenthal (1894–1920) and women erased from history." />
+  <meta name="description" content="The Elisabeth Rosenthal Research & Memorial Initiative: restoring the documented biography of Elisabeth (Lisa) Rosenthal (1894–1920) and women erased from history." />
   <style>
     :root {
       --bg: #f8f6f2;
@@ -25,7 +25,7 @@
     header {
       border-bottom: 1px solid var(--border);
       background: var(--card);
-      padding: 18px 24px;
+      padding: 16px 24px;
       position: sticky;
       top: 0;
       z-index: 10;
@@ -39,12 +39,22 @@
       gap: 16px;
       flex-wrap: wrap;
     }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text);
+    }
+    .brand-sig {
+      height: 30px;
+      width: auto;
+      display: block;
+    }
     .brand {
-      font-size: 1.05rem;
+      font-size: 1rem;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: var(--text);
-      text-decoration: none;
       font-weight: bold;
     }
     .lang-switch {
@@ -101,7 +111,26 @@
     .subtitle {
       font-size: 1.2rem;
       color: var(--muted);
-      margin: 0;
+      margin: 0 0 24px;
+    }
+    .sig-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 18px 22px;
+      display: inline-block;
+      max-width: 100%;
+    }
+    .sig-card img {
+      max-height: 54px;
+      width: auto;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .sig-caption {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.82rem;
+      color: var(--muted);
     }
     section {
       margin-bottom: 44px;
@@ -122,6 +151,22 @@
     }
     .manifesto p:first-child { margin-top: 0; }
     .manifesto p:last-child { margin-bottom: 0; }
+    .researcher-note {
+      background: #fdfaf7;
+      border: 1px solid #dfd3c8;
+      border-left: 4px solid var(--accent);
+      padding: 22px 26px;
+      border-radius: 6px;
+    }
+    .researcher-note h3 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .researcher-note p {
+      margin: 0;
+    }
     .timeline {
       list-style: none;
       padding: 0;
@@ -159,8 +204,19 @@
       border-top: 1px solid var(--border);
       padding-top: 24px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 0.85rem;
+      font-size: 0.86rem;
       color: var(--muted);
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .author-line {
+      margin-bottom: 12px;
+      color: var(--text);
     }
     .lang-section { display: none; }
     .lang-section.active { display: block; }
@@ -169,7 +225,10 @@
 <body>
   <header>
     <div class="nav-wrap">
-      <a href="#" class="brand">Elisabeth Rosenthal Initiative</a>
+      <a href="#" class="brand-group">
+        <img src="signature.png" alt="Elisabeth Lang geborene Rosenthal signature" class="brand-sig" />
+        <span class="brand">Elisabeth Rosenthal Initiative</span>
+      </a>
       <div class="lang-switch" role="group" aria-label="Language selector">
         <button class="lang-btn active" data-target="en" onclick="setLang('en')">EN</button>
         <button class="lang-btn" data-target="de" onclick="setLang('de')">Deutsch</button>
@@ -185,6 +244,10 @@
         <div class="dates">August 7 [O.S. July 25], 1894 — September 25, 1920</div>
         <h1>Elisabeth (Lisa) Rosenthal</h1>
         <p class="subtitle">Actress, historical figure, and the symbol of an independent research initiative dedicated to restoring the documented stories of women erased from history.</p>
+        <div class="sig-card">
+          <img src="signature.png" alt="Autograph signature of Elisabeth Lang geborene Rosenthal, February 13, 1919" />
+          <div class="sig-caption">Authentic signature: <em>“Elisabeth Lang geborene Rosenthal”</em> — Marriage Register, Berlin-Charlottenburg, February 13, 1919.</div>
+        </div>
       </div>
 
       <section>
@@ -218,7 +281,14 @@
       </section>
 
       <section>
-        <h2>Primary Archival Citations</h2>
+        <div class="researcher-note">
+          <h3>Researcher’s Note</h3>
+          <p>The convergence of documentary anomalies and contemporary testimonies—a five-day delay in registering the death, the absence of a personal declaration by her husband, the direct intervention of the Police President of Berlin-Schöneberg, reports that she had telephoned a friend shortly before taking a bath to arrange a meeting, and the influence of marriage witness Albert Pommer within the studio establishment—provides compelling grounds to conclude that the official narrative of an accident or suicide was a cover-up, and that Elisabeth Rosenthal was murdered.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Primary Archival Citations &amp; Historiography</h2>
         <div class="archive-box">
           <strong>1. Birth Record (1894) — Vilna Rabbinate</strong>
           Recorded under female entry No. 110 (5 Av 5654 / July 25, 1894).
@@ -234,9 +304,14 @@
           Recorded on September 30, 1920, upon official police notification (<em>der Polizeipräsident in Berlin-Schöneberg</em>).
           <span class="archive-code">Source: Landesarchiv Berlin, Standesamt Berlin-Wilmersdorf, Sterberegister 1920, Nr. 1083.</span>
         </div>
+        <div class="archive-box">
+          <strong>4. Historiographical Context</strong>
+          Prior to the expiration of the 100-year German civil archive seal, biographers noted the absence of official records (see Patrick McGilligan, <em>Fritz Lang: The Nature of the Beast</em>, 1997; William Ahearn, <em>The Mysterious Death of Lisa Rosenthal</em>, 2012). The records cited above resolve these long-standing biographical gaps.
+        </div>
       </section>
 
       <footer>
+        <p class="author-line"><strong>Compiled &amp; researched by:</strong> <a href="https://github.com/murcowboy" target="_blank" rel="noopener">Timofey Mur (murcowboy)</a> &middot; Contact: <a href="mailto:contact@elisabethrosenthal.org">contact@elisabethrosenthal.org</a></p>
         <p><strong>Disclaimer:</strong> The Elisabeth Rosenthal Initiative (elisabethrosenthal.org) is an independent, non-commercial historical research and memorial project. It is not a registered financial or charitable foundation and does not solicit monetary donations.</p>
       </footer>
     </div>
@@ -247,6 +322,10 @@
         <div class="dates">7. August [jul. 25. Juli] 1894 — 25. September 1920</div>
         <h1>Elisabeth (Lisa) Rosenthal</h1>
         <p class="subtitle">Schauspielerin, historische Persönlichkeit und Symbol einer unabhängigen Forschungsinitiative zur Wiederherstellung der dokumentierten Lebensgeschichten von Frauen, die aus der Geschichte verdrängt wurden.</p>
+        <div class="sig-card">
+          <img src="signature.png" alt="Eigenhändige Unterschrift von Elisabeth Lang geborene Rosenthal, 13. Februar 1919" />
+          <div class="sig-caption">Eigenhändige Unterschrift: <em>„Elisabeth Lang geborene Rosenthal“</em> — Heiratsregister, Berlin-Charlottenburg, 13. Februar 1919.</div>
+        </div>
       </div>
 
       <section>
@@ -280,7 +359,14 @@
       </section>
 
       <section>
-        <h2>Archivische Primärquellen</h2>
+        <div class="researcher-note">
+          <h3>Anmerkung des Forschers</h3>
+          <p>Das Zusammentreffen archivalischer Auffälligkeiten und zeitgenössischer Zeugnisse – die fünftägige Verzögerung bei der Beurkundung des Todesfalls, das Fehlen einer eigenen Sterbeanzeige durch den Ehemann, das unmittelbare Eingreifen des Polizeipräsidenten in Berlin-Schöneberg, Berichte über ein kurz vor dem Bad geführtes Telefonat mit einer Freundin zur Verabredung eines Treffens sowie der Einfluss des Trauzeugen Albert Pommer im Filmgeschäft – begründet die Annahme, dass die offizielle Darstellung eines Unfalls oder Suizids lediglich der Vertuschung diente und Elisabeth Rosenthal tatsächlich ermordet wurde.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Archivische Primärquellen &amp; Historiografie</h2>
         <div class="archive-box">
           <strong>1. Geburtsregister (1894) — Rabbinat Wilna</strong>
           Verzeichnet unter dem weiblichen Eintrag Nr. 110 (5. Aw 5654 / 25. Juli 1894).
@@ -296,9 +382,14 @@
           Beurkundet am 30. September 1920 auf amtliche Mitteilung (<em>der Polizeipräsident in Berlin-Schöneberg</em>).
           <span class="archive-code">Signatur: Landesarchiv Berlin, Standesamt Berlin-Wilmersdorf, Sterberegister 1920, Nr. 1083.</span>
         </div>
+        <div class="archive-box">
+          <strong>4. Historiografischer Kontext</strong>
+          Vor Ablauf der gesetzlichen Schutzfristen für Personenstandsregister wiesen Biografen auf das Fehlen amtlicher Dokumente hin (vgl. Patrick McGilligan, <em>Fritz Lang: The Nature of the Beast</em>, 1997; William Ahearn, <em>The Mysterious Death of Lisa Rosenthal</em>, 2012). Die hier dokumentierten Archivalien schließen diese langjährigen Forschungslücken.
+        </div>
       </section>
 
       <footer>
+        <p class="author-line"><strong>Recherche &amp; Zusammenstellung:</strong> <a href="https://github.com/murcowboy" target="_blank" rel="noopener">Timofey Mur (murcowboy)</a> &middot; Kontakt: <a href="mailto:contact@elisabethrosenthal.org">contact@elisabethrosenthal.org</a></p>
         <p><strong>Rechtlicher Hinweis:</strong> Die Elisabeth Rosenthal Initiative (elisabethrosenthal.org) ist ein unabhängiges, nicht-kommerzielles historisches Forschungs- und Erinnerungsprojekt. Es handelt sich nicht um eine eingetragene rechtsfähige Stiftung oder gemeinnützige Organisation und es werden keine Geldspenden gesammelt.</p>
       </footer>
     </div>
@@ -309,6 +400,10 @@
         <div class="dates">25 июля (7 августа) 1894 — 25 сентября 1920</div>
         <h1>Элизабет (Лиза) Розенталь</h1>
         <p class="subtitle">Актриса, историческая личность и символ независимой исследовательской инициативы, посвящённой восстановлению документальной памяти о женщинах, вычеркнутых из истории.</p>
+        <div class="sig-card">
+          <img src="signature.png" alt="Подлинная подпись Элизабет Ланг, урождённой Розенталь, 13 февраля 1919" />
+          <div class="sig-caption">Подлинная подпись: <em>«Elisabeth Lang geborene Rosenthal»</em> — запись о браке, Берлин-Шарлоттенбург, 13 февраля 1919 года.</div>
+        </div>
       </div>
 
       <section>
@@ -342,7 +437,14 @@
       </section>
 
       <section>
-        <h2>Архивные первоисточники</h2>
+        <div class="researcher-note">
+          <h3>Комментарий автора исследования</h3>
+          <p>Совокупность архивных аномалий и свидетельств современников — пятидневная задержка регистрации смерти, отсутствие личного заявления со стороны мужа, прямое вмешательство полицей-президента Берлин-Шёнеберга, сведения о том, что незадолго до того как пойти в ванную, она звонила подруге и договаривалась о встрече, а также связи свидетеля Альберта Поммера с руководством киноиндустрии — даёт веские основания полагать, что официальная версия о несчастном случае или самоубийстве была прикрытием, а Элизабет Розенталь на самом деле была убита.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Архивные первоисточники и историография</h2>
         <div class="archive-box">
           <strong>1. Метрическая запись о рождении (1894) — Виленский раввинат</strong>
           Запись женского пола № 110 (5 Ава 5654 / 25 июля 1894 года).
@@ -358,9 +460,14 @@
           Запись от 30 сентября 1920 года по официальному сообщению полиции (<em>der Polizeipräsident in Berlin-Schöneberg</em>).
           <span class="archive-code">Шифр: Landesarchiv Berlin, Standesamt Berlin-Wilmersdorf, Sterberegister 1920, Nr. 1083.</span>
         </div>
+        <div class="archive-box">
+          <strong>4. Историографический контекст</strong>
+          До истечения столетнего срока закрытости немецких архивов ЗАГС биографы констатировали отсутствие официальных документов (см. Patrick McGilligan, <em>Fritz Lang: The Nature of the Beast</em>, 1997; William Ahearn, <em>The Mysterious Death of Lisa Rosenthal</em>, 2012). Приведённые выше первоисточники впервые закрывают эти белые пятна.
+        </div>
       </section>
 
       <footer>
+        <p class="author-line"><strong>Исследование и составление:</strong> <a href="https://github.com/murcowboy" target="_blank" rel="noopener">Timofey Mur (murcowboy)</a> &middot; Связь: <a href="mailto:contact@elisabethrosenthal.org">contact@elisabethrosenthal.org</a></p>
         <p><strong>Правовое уведомление:</strong> Инициатива Элизабет Розенталь (elisabethrosenthal.org) является частным некоммерческим историко-исследовательским и мемориальным проектом, не является зарегистрированным благотворительным или финансовым фондом и не ведёт сбор денежных средств.</p>
       </footer>
     </div>
