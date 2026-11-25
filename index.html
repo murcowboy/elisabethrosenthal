@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elisabeth Rosenthal (1894–1920) — Research &amp; Memorial Initiative</title>
+  <meta name="description" content="The Elisabeth Rosenthal Research &amp; Memorial Initiative: restoring the documented biography of Elisabeth (Lisa) Rosenthal (1894–1920) and women erased from history." />
+  <style>
+    :root {
+      --bg: #f8f6f2;
+      --card: #ffffff;
+      --text: #1f1e1c;
+      --muted: #66625b;
+      --accent: #7a2e2e;
+      --border: #e5e0d8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--card);
+      padding: 18px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .lang-switch {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .lang-btn {
+      background: transparent;
+      border: none;
+      border-right: 1px solid var(--border);
+      padding: 6px 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--muted);
+      transition: background 0.15s, color 0.15s;
+    }
+    .lang-btn:last-child { border-right: none; }
+    .lang-btn:hover {
+      color: var(--accent);
+      background: rgba(122, 46, 46, 0.05);
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #ffffff;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .hero {
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+    .dates {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin: 0 0 18px;
+      font-weight: normal;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    section {
+      margin-bottom: 44px;
+    }
+    h2 {
+      font-size: 1.45rem;
+      font-weight: normal;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .manifesto {
+      background: var(--card);
+      border-left: 3px solid var(--accent);
+      padding: 24px 28px;
+      border-radius: 0 6px 6px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    }
+    .manifesto p:first-child { margin-top: 0; }
+    .manifesto p:last-child { margin-bottom: 0; }
+    .timeline {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .timeline li {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .timeline li:last-child { border-bottom: none; }
+    .t-date {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .archive-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 20px 24px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      font-size: 0.96rem;
+    }
+    .archive-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: block;
+      margin-top: 6px;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap">
+      <a href="#" class="brand">Elisabeth Rosenthal Initiative</a>
+      <div class="lang-switch" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-target="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-target="de" onclick="setLang('de')">Deutsch</button>
+        <button class="lang-btn" data-target="ru" onclick="setLang('ru')">RU</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ENGLISH VERSION -->
+    <div id="lang-en" class="lang-section active">
+      <div class="hero">
+        <div class="dates">August 7 [O.S. July 25], 1894 — September 25, 1920</div>
+        <h1>Elisabeth (Lisa) Rosenthal</h1>
+        <p class="subtitle">Actress, historical figure, and the symbol of an independent research initiative dedicated to restoring the documented stories of women erased from history.</p>
+      </div>
+
+      <section>
+        <h2>Why One Name Stands for Many</h2>
+        <div class="manifesto">
+          <p>For over a century, Elisabeth Rosenthal existed in film history only as a passing footnote—the forgotten first wife of director Fritz Lang, whose birth date, family origins, and exact circumstances of death remained unverified in standard biographies.</p>
+          <p>This project began with archival research into primary civil and rabbinical records in Lithuania and Germany to recover her real life. Her name became the starting point for a broader mission: using open archival evidence to restore the dignity, biographies, and voices of women whose lives were overshadowed or silenced.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Documented Biography</h2>
+        <ul class="timeline">
+          <li>
+            <span class="t-date">July 25 (August 7, N.S.), 1894 — Birth in Vilna</span>
+            Born Yelizabeta (Elisabeth) Rosenthal in Vilna (present-day Vilnius, Lithuania) to merchant Saul (Schewel) Moiseyevich Rosenthal (1860–1932) and Pauline (Pesche) Yoselovna Rosenthal, née Judelowitz (1864–1929).
+          </li>
+          <li>
+            <span class="t-date">1918–1919 — Berlin &amp; Stage Career</span>
+            Worked as a stage actress (<em>Schauspielerin</em>) in Berlin, residing at Kurfürstendamm 45 in Charlottenburg.
+          </li>
+          <li>
+            <span class="t-date">February 13, 1919 — Marriage in Charlottenburg</span>
+            Married film director Friedrich Christian Anton (Fritz) Lang at Standesamt Charlottenburg I. Witnesses were merchant Albert Pommer and stockbroker Paul Oestreich.
+          </li>
+          <li>
+            <span class="t-date">September 25, 1920 — Death in Berlin-Wilmersdorf</span>
+            Died at 9:15 PM at her apartment at Spessartstraße 1, Berlin-Wilmersdorf, at the age of 26. Her death was officially registered five days later, on September 30, 1920, following formal notification by the Police President of Berlin-Schöneberg.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Primary Archival Citations</h2>
+        <div class="archive-box">
+          <strong>1. Birth Record (1894) — Vilna Rabbinate</strong>
+          Recorded under female entry No. 110 (5 Av 5654 / July 25, 1894).
+          <span class="archive-code">Source: Lithuanian State Historical Archives (LVIA), Fond 728, Inventory 3, File 1465, Entry F110.</span>
+        </div>
+        <div class="archive-box">
+          <strong>2. Marriage Record (1919) — Berlin-Charlottenburg</strong>
+          Recorded on February 13, 1919, bearing her original signature (<em>Elisabeth Lang geborene Rosenthal</em>).
+          <span class="archive-code">Source: Landesarchiv Berlin, Standesamt Charlottenburg I, Heiratsregister 1919, Nr. 110.</span>
+        </div>
+        <div class="archive-box">
+          <strong>3. Death Record (1920) — Berlin-Wilmersdorf</strong>
+          Recorded on September 30, 1920, upon official police notification (<em>der Polizeipräsident in Berlin-Schöneberg</em>).
+          <span class="archive-code">Source: Landesarchiv Berlin, Standesamt Berlin-Wilmersdorf, Sterberegister 1920, Nr. 1083.</span>
+        </div>
+      </section>
+
+      <footer>
+        <p><strong>Disclaimer:</strong> The Elisabeth Rosenthal Initiative (elisabethrosenthal.org) is an independent, non-commercial historical research and memorial project. It is not a registered financial or charitable foundation and does not solicit monetary donations.</p>
+      </footer>
+    </div>
+
+    <!-- GERMAN VERSION (DEUTSCH) -->
+    <div id="lang-de" class="lang-section">
+      <div class="hero">
+        <div class="dates">7. August [jul. 25. Juli] 1894 — 25. September 1920</div>
+        <h1>Elisabeth (Lisa) Rosenthal</h1>
+        <p class="subtitle">Schauspielerin, historische Persönlichkeit und Symbol einer unabhängigen Forschungsinitiative zur Wiederherstellung der dokumentierten Lebensgeschichten von Frauen, die aus der Geschichte verdrängt wurden.</p>
+      </div>
+
+      <section>
+        <h2>Warum ein Name für viele steht</h2>
+        <div class="manifesto">
+          <p>Über ein Jahrhundert lang existierte Elisabeth Rosenthal in der Filmgeschichte lediglich als beiläufige Fußnote – als vergessene erste Ehefrau des Regisseurs Fritz Lang, deren Geburtsdatum, Herkunft und genaue Todesumstände selbst in ausführlichen Biografien ungeklärt blieben.</p>
+          <p>Dieses Projekt begann mit der Auswertung von Primärquellen aus litauischen und deutschen Personenstands- sowie Rabbinatsarchiven, um ihr tatsächliches Leben zu rekonstruieren. Ihr Name wurde zum Ausgangspunkt einer umfassenderen Aufgabe: mithilfe zugänglicher Archivdokumente die Würde, Biografien und Stimmen jener Frauen zurückzugewinnen, deren Schicksale überschattet oder verschwiegen wurden.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Dokumentierte Biografie</h2>
+        <ul class="timeline">
+          <li>
+            <span class="t-date">25. Juli (7. August greg.) 1894 — Geburt in Wilna</span>
+            Geboren als Jelisaweta (Elisabeth) Rosenthal in Wilna (heute Vilnius, Litauen) als Tochter des Kaufmanns Saul (Schewel) Moissejewitsch Rosenthal (1860–1932) und seiner Ehefrau Pauline (Pesche), geborene Judelowitz (1864–1929).
+          </li>
+          <li>
+            <span class="t-date">1918–1919 — Berlin und Bühnenlaufbahn</span>
+            Tätig als Schauspielerin in Berlin, wohnhaft in Charlottenburg, Kurfürstendamm 45.
+          </li>
+          <li>
+            <span class="t-date">13. Februar 1919 — Eheschließung in Charlottenburg</span>
+            Heirat mit dem Filmregisseur Friedrich Christian Anton (Fritz) Lang vor dem Standesamt Charlottenburg I. Trauzeugen waren der Kaufmann Albert Pommer und der Börsenmakler Paul Oestreich.
+          </li>
+          <li>
+            <span class="t-date">25. September 1920 — Tod in Berlin-Wilmersdorf</span>
+            Verstorben um 21:15 Uhr in ihrer Wohnung in Berlin-Wilmersdorf, Spessartstraße 1, im Alter von 26 Jahren. Der Sterbefall wurde erst fünf Tage später, am 30. September 1920, auf amtliche Mitteilung des Polizeipräsidenten in Berlin-Schöneberg beurkundet.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Archivische Primärquellen</h2>
+        <div class="archive-box">
+          <strong>1. Geburtsregister (1894) — Rabbinat Wilna</strong>
+          Verzeichnet unter dem weiblichen Eintrag Nr. 110 (5. Aw 5654 / 25. Juli 1894).
+          <span class="archive-code">Signatur: Litauisches Staatliches Historisches Archiv (LVIA), Bestand 728, Findbuch 3, Akte 1465, Eintrag F110.</span>
+        </div>
+        <div class="archive-box">
+          <strong>2. Heiratsregister (1919) — Berlin-Charlottenburg</strong>
+          Beurkundet am 13. Februar 1919 mit ihrer eigenhändigen Unterschrift (<em>Elisabeth Lang geborene Rosenthal</em>).
+          <span class="archive-code">Signatur: Landesarchiv Berlin, Standesamt Charlottenburg I, Heiratsregister 1919, Nr. 110.</span>
+        </div>
+        <div class="archive-box">
+          <strong>3. Sterberegister (1920) — Berlin-Wilmersdorf</strong>
+          Beurkundet am 30. September 1920 auf amtliche Mitteilung (<em>der Polizeipräsident in Berlin-Schöneberg</em>).
+          <span class="archive-code">Signatur: Landesarchiv Berlin, Standesamt Berlin-Wilmersdorf, Sterberegister 1920, Nr. 1083.</span>
+        </div>
+      </section>
+
+      <footer>
+        <p><strong>Rechtlicher Hinweis:</strong> Die Elisabeth Rosenthal Initiative (elisabethrosenthal.org) ist ein unabhängiges, nicht-kommerzielles historisches Forschungs- und Erinnerungsprojekt. Es handelt sich nicht um eine eingetragene rechtsfähige Stiftung oder gemeinnützige Organisation und es werden keine Geldspenden gesammelt.</p>
+      </footer>
+    </div>
+
+    <!-- RUSSIAN VERSION -->
+    <div id="lang-ru" class="lang-section">
+      <div class="hero">
+        <div class="dates">25 июля (7 августа) 1894 — 25 сентября 1920</div>
+        <h1>Элизабет (Лиза) Розенталь</h1>
+        <p class="subtitle">Актриса, историческая личность и символ независимой исследовательской инициативы, посвящённой восстановлению документальной памяти о женщинах, вычеркнутых из истории.</p>
+      </div>
+
+      <section>
+        <h2>Почему одно имя говорит за многих</h2>
+        <div class="manifesto">
+          <p>Более ста лет Элизабет Розенталь оставалась в истории кино лишь беглой сноской — забытой первой женой режиссёра Фрица Ланга, чья дата рождения, происхождение и точные обстоятельства гибели отсутствовали даже в подробных биографиях.</p>
+          <p>Этот проект начался с поиска подлинных метрических и актовых записей в архивах Литвы и Германии, чтобы вернуть её настоящую биографию. Её имя стало символом более широкой задачи: с помощью открытых архивных документов возвращать голос, достоинство и подлинную историю женщинам, чьи судьбы были отодвинуты в тень.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Документальная хронология</h2>
+        <ul class="timeline">
+          <li>
+            <span class="t-date">25 июля (7 августа по н. ст.) 1894 — Рождение в Вильне</span>
+            Родилась в Вильне (ныне Вильнюс, Литва) под именем Елизавета в семье купца Саула (Шевеля) Моисеевича Розенталя (1860–1932) и Паулины (Песи) Йоселевны Розенталь, урождённой Юделович (1864–1929).
+          </li>
+          <li>
+            <span class="t-date">1918–1919 — Театральная работа в Берлине</span>
+            Работала театральной актрисой (<em>Schauspielerin</em>) в Берлине, проживала в Шарлоттенбурге по адресу Курфюрстендамм, 45.
+          </li>
+          <li>
+            <span class="t-date">13 февраля 1919 — Брак в Шарлоттенбурге</span>
+            Вышла замуж за кинорежиссёра Фридриха Кристиана Антона (Фрица) Ланга в ЗАГСе Берлин-Шарлоттенбург I. Свидетелями выступили коммерсант Альберт Поммер и биржевой маклер Пауль Острайх.
+          </li>
+          <li>
+            <span class="t-date">25 сентября 1920 — Гибель в Берлин-Вильмерсдорфе</span>
+            Скончалась в 21:15 в своей квартире по адресу Берлин-Вильмерсдорф, Шпессартштрассе, 1 в возрасте 26 лет. Запись о смерти была внесена лишь пять дней спустя, 30 сентября 1920 года, по официальному уведомлению полицей-президента Берлин-Шёнеберга.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Архивные первоисточники</h2>
+        <div class="archive-box">
+          <strong>1. Метрическая запись о рождении (1894) — Виленский раввинат</strong>
+          Запись женского пола № 110 (5 Ава 5654 / 25 июля 1894 года).
+          <span class="archive-code">Шифр: Литовский государственный исторический архив (LVIA), ф. 728, оп. 3, д. 1465, зап. № F110.</span>
+        </div>
+        <div class="archive-box">
+          <strong>2. Актовая запись о браке (1919) — Берлин-Шарлоттенбург</strong>
+          Запись от 13 февраля 1919 года с подлинной подписью (<em>Elisabeth Lang geborene Rosenthal</em>).
+          <span class="archive-code">Шифр: Landesarchiv Berlin, Standesamt Charlottenburg I, Heiratsregister 1919, Nr. 110.</span>
+        </div>
+        <div class="archive-box">
+          <strong>3. Актовая запись о смерти (1920) — Берлин-Вильмерсдорф</strong>
+          Запись от 30 сентября 1920 года по официальному сообщению полиции (<em>der Polizeipräsident in Berlin-Schöneberg</em>).
+          <span class="archive-code">Шифр: Landesarchiv Berlin, Standesamt Berlin-Wilmersdorf, Sterberegister 1920, Nr. 1083.</span>
+        </div>
+      </section>
+
+      <footer>
+        <p><strong>Правовое уведомление:</strong> Инициатива Элизабет Розенталь (elisabethrosenthal.org) является частным некоммерческим историко-исследовательским и мемориальным проектом, не является зарегистрированным благотворительным или финансовым фондом и не ведёт сбор денежных средств.</p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      document.querySelector('.lang-btn[data-target="' + lang + '"]').classList.add('active');
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>
